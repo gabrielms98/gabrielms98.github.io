@@ -1,0 +1,16 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+
+    background: linear-gradient(180deg, $clr-primary 0%, #FFFFFF 29.69%);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    color: $ff-primary;
+}
