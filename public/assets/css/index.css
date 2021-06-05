@@ -13,108 +13,51 @@ body {
   color: #05445E;
 }
 
-.header {
-  width: 100%;
-  height: 4rem;
-  padding: 0 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__routes__anchor {
-  text-decoration: none;
-  color: #FF4500;
-  font-size: 1.5rem;
-  position: relative;
-  width: max-content;
-}
-.header__routes__anchor::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0.1rem;
-  background-color: #FF4500;
-  border-radius: 40vw;
-  width: 0%;
-  transition: all 0.2s ease-in-out;
-}
-.header__routes__anchor:hover::before {
-  width: 100%;
-}
-.header__routes__anchor:not(:last-of-type) {
-  margin-right: 1rem;
-}
-
 .hero {
-  width: 100%;
-  height: calc(100vh - 4rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5rem;
   position: relative;
 }
-.hero__content__title h2 {
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 1;
+.hero__content__social {
+  width: 60%;
 }
-.hero__content__title h2 .highlight {
+.hero__content__social > a + a {
+  margin-left: 0.5rem;
+}
+.hero__image {
+  right: -1.25rem;
+  top: -1.75rem;
+}
+.hero .highlight {
   color: #FF4500;
-  font-weight: 600;
-}
-.hero__content__subtitle {
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-.hero__img img {
-  width: 730px;
-  height: 730px;
-}
-.hero__scroll {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: jump 1s ease-in-out infinite;
-}
-.hero__scroll img {
-  width: 3.5rem;
-  height: 3.5rem;
 }
 
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.about__header .rect {
+  margin-left: -1.25rem;
 }
-.working {
-  width: 100%;
-  height: 100vh;
+.about__header__content {
+  font-size: 2rem;
+}
+
+.skills {
   position: relative;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
-.working__header {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
+.skills__background {
   position: absolute;
+  top: 0;
+  z-index: -1;
 }
-.working__img {
-  display: grid;
-  place-items: center;
+.skills__content__header {
+  color: #05445E;
+  font-size: 2rem;
 }
-.working__img img {
-  margin-top: 3rem;
-  width: 1000px;
+.skills__content__skill__progressbar {
+  background: white;
+  border-radius: 40vw;
+}
+.skills__content__skill__progressbar .progress {
+  border-radius: 40vw;
+  background-color: #FF4500;
 }
 
 /*# sourceMappingURL=index.css.map */

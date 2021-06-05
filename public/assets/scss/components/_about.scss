@@ -1,0 +1,12 @@
+.about {
+    &__header {
+
+        & .rect {
+            margin-left: -1.25rem;
+        }
+
+        &__content {
+            font-size: 2rem;
+        }
+    }
+}

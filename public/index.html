@@ -26,47 +26,92 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css"
+        integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Portifolio | Gabriel Martins</title>
-</head>
-<body>
-    <nav class="header">
-        <div class="header__logo">
-            <img src="asd" alt="logo">
-        </div>
-        <div class="header__routes">
-            <a class="header__routes__anchor" href="#">About</a>
-            <a class="header__routes__anchor" href="#">Designs</a>
+</head> 
+<body class="px-5 overflow-x-hidden max-w-full">
+    <nav class="header flex justify-between py-6">
+        <img src="Asd" alt="Logo">
+        <div class="hidden md:block">
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
         </div>
     </nav>
+    <section class="hero flex my-12">
+        <div class="hero__content flex-1 z-10">
+           <div class="hero__content__title text-xl font-xl">
+                <div>Hi,</div>
+                <div>I'm <span class="highlight font-semibold">Gabriel Martins</span></div>
+                <div>front-end developer.</div>
+           </div>
+           <div class="hero__content__text hidden">
+            Computer Science student with a deep passion for Front-end stuff! Learning from people all around the world and
+            developing solutions to amaze my clients.
+           </div>
+           <div class="hero__content__social flex justify-center items-center mt-8">
+            <a href="#">
+                <img class="flex justify-center" src="assets/files/instagram_logo.svg" alt="instagram">
+            </a>
+            <a href="#">
+                <img class="flex justify-center" src="assets/files/twitter_logo.svg" alt="instagram">
+            </a>
+            <a href="#">
+                <img class="flex justify-center" src="assets/files/linkedin_logo.svg" alt="instagram">
+            </a>
+           </div>
+        </div>
+        <div class="hero__image absolute z-0">
+            <img class="hidden" src="assets/files/hero_img.png" alt="Selfie">
+            <img class="" src="assets/files/hero_img_mobile.png" alt="Selfie">
+        </div>
+    </section>
 
-    <main class="hero">
-        <div class="hero__content">
-            <div class="hero__content__title">
-                <h2>Hi!</h2>
-                <h2>I`m <span class="highlight">Gabriel Martins</span></h2>
-                <h2>front-end developer.</h2>
-            </div>  
-            <div class="hero__content__subtitle">
-                Computer Science student with a deep passion for Front-end stuff! Learning from people all around the world and
-                developing solutions to amaze my clients.
+    <section class="about mt-36">
+        <div class="about__header flex ">
+            <div class="rect">
+                <img src="assets/files/rectangle_mobile.png" alt="">
+            </div>
+            <div class="about__header__content font-normal grid place-items-center ml-4">
+                About me
             </div>
         </div>
-        <div class="hero__img">
-            <img src="assets/files/hero_img.png" alt="">
+        <div class="about__content mt-4">
+            <p>
+                I`m 23 years old. Studing Computer Science at UFMG. As a front-end developer I`m working on freelance projects and as a
+                Web Support Engineer for Gov Predict. I like playing video games and spending my time watching anime. One of the best
+                experiences I had in my journey was to participate in Brazilian`s Programing Marathon where I could develop my problem
+                solution skills and optmize the results.
+            </p>
         </div>
-        <div class="hero__scroll">
-            <img src="assets/files/scroll.svg" alt="scroll">
-        </div>
-    </main>
+    </section>
 
-    <section class="working">
-        <div class="working__header">
-            Working on...
+    <section class="skills mt-16">
+        <div class="skills__background">
+            <img class="" src="assets/files/angle_background_mobile.png" alt="">
         </div>
-        <div class="working__img">
-            <img src="assets/files/undraw_under_construction_46pa.svg" alt="">
+
+        <div class="skills__content px-5 py-24">
+            <div class="skills__content__header text-xl">
+                Skills
+            </div>
+
+            <div class="skills__content__skill mt-6">
+                <div class="skilss__content__skill__text flex justify-between items-center">
+                    <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                    <div class="skills__content__skill__icon text-lg font-medium">
+                        <img src="assets/files/html_icon.png" alt="">
+                    </div>
+                </div>
+                <div class="skills__content__skill__progressbar w-full h-4">
+                    <div class="progress h-full" style="width: 90%;"></div>
+                </div>
+            </div>
         </div>
+
     </section>
 </body>
 </html>

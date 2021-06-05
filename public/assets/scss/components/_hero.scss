@@ -1,68 +1,29 @@
 .hero {
 
-    width: 100%;
-    height: calc(100vh - 4rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0 5rem;
     position: relative;
 
     &__content {
-        
-        &__title h2{
-            font-size: 4rem;
-            font-weight: 500;
+        &__social {
+            width: 60%;
 
-            line-height: 1;
-            & .highlight {
-                color: $clr-secondary;
-                font-weight: 600;
+            &>a+a {
+                margin-left: .5rem;
             }
         }
-
-        &__subtitle {
-            margin-top: 2rem;
-
-            font-size: 1.5rem;
-            font-weight: normal;
-        }
     }
 
-    &__img {
+    &__image {
+
+        right: -1.25rem;
+        top: -1.75rem;
 
         & img {
-            width: 730px;
-            height: 730px;
+            
         }
+    } 
+    
+    & .highlight {
+        color: $clr-secondary;
     }
 
-    &__scroll {
-        position: absolute;
-
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: jump 1s ease-in-out infinite;
-
-        & img {
-            width: 3.5rem;
-            height: 3.5rem;
-        }
-    }
-}
-
-@keyframes jump {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(5px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }
