@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Portifolio | Gabriel Martins</title>
 </head> 
-<body class="px-5 overflow-x-hidden max-w-full">
+<body class="px-5 md:px-12 overflow-x-hidden max-w-full sm:bg-blue-300 md:bg-green-300 lg:bg-red-300 xl:bg-yellow-400">
     <nav class="header flex justify-between py-6">
         <img src="Asd" alt="Logo">
         <div class="hidden md:block">
@@ -43,12 +43,12 @@
     </nav>
     <section class="hero flex my-12">
         <div class="hero__content flex-1 z-10">
-           <div class="hero__content__title text-xl font-xl">
+           <div class="hero__content__title font-xl text-xl">
                 <div>Hi,</div>
                 <div>I'm <span class="highlight font-semibold">Gabriel Martins</span></div>
                 <div>front-end developer.</div>
            </div>
-           <div class="hero__content__text hidden">
+           <div class="hero__content__text hidden sm:block md:block md:mt-2">
             Computer Science student with a deep passion for Front-end stuff! Learning from people all around the world and
             developing solutions to amaze my clients.
            </div>
@@ -64,54 +64,162 @@
             </a>
            </div>
         </div>
-        <div class="hero__image absolute z-0">
-            <img class="hidden" src="assets/files/hero_img.png" alt="Selfie">
-            <img class="" src="assets/files/hero_img_mobile.png" alt="Selfie">
+        <div class="hero__image z-0 absolute sm:relative  md:relative md:w-80">
+            <img class="hidden md:flex" src="assets/files/hero_img.png" alt="Selfie">
+            <img class="md:hidden" src="assets/files/hero_img_mobile.png" alt="Selfie">
+        </div>
+        <div class="hero__scroll absolute hidden md:block w-12">
+            <img src="assets/files/scroll.svg" alt="scroll">
         </div>
     </section>
 
-    <section class="about mt-36">
-        <div class="about__header flex ">
-            <div class="rect">
+    <section class="about mt-36 sm:mt-24">
+        <div class="about__header flex md:justify-center">
+            <div class="rect md:hidden">
                 <img src="assets/files/rectangle_mobile.png" alt="">
             </div>
-            <div class="about__header__content font-normal grid place-items-center ml-4">
+            <div class="about__header__content font-normal grid place-items-center ml-4 md:ml-0">
                 About me
             </div>
         </div>
-        <div class="about__content mt-4">
-            <p>
+        <div class="about__content mt-4 flex justify-center items-center">
+            <div class="about__image hidden md:flex ">
+                <img class="sm:w-80 " src="assets/files/about_img.png" alt="about">
+            </div>
+            <div class="flex-1 md:mt-20 md:ml-4 md:text-xl">
                 I`m 23 years old. Studing Computer Science at UFMG. As a front-end developer I`m working on freelance projects and as a
                 Web Support Engineer for Gov Predict. I like playing video games and spending my time watching anime. One of the best
                 experiences I had in my journey was to participate in Brazilian`s Programing Marathon where I could develop my problem
                 solution skills and optmize the results.
-            </p>
+            </div>
         </div>
     </section>
 
     <section class="skills mt-16">
         <div class="skills__background">
-            <img class="" src="assets/files/angle_background_mobile.png" alt="">
+            <img class="sm:hidden" src="assets/files/angle_background_mobile.png" alt="">
+            <img class="hidden sm:block" src="assets/files/angle_background.png" alt="">
         </div>
 
-        <div class="skills__content px-5 py-24">
-            <div class="skills__content__header text-xl">
+        <div class="skills__content px-5 pt-24">
+            <div class="skills__content__header text-xl sm:text-center">
                 Skills
             </div>
-
-            <div class="skills__content__skill mt-6">
-                <div class="skilss__content__skill__text flex justify-between items-center">
-                    <div class="skills__content__skill__name text-lg font-medium">HTML</div>
-                    <div class="skills__content__skill__icon text-lg font-medium">
-                        <img src="assets/files/html_icon.png" alt="">
+            <div class="skills__container flex flex-col justify-center sm:flex-row md:px-8">
+                <div class="flex flex-col flex-1 sm:pr-4">
+                    <div class="skills__content__skill mt-6">
+                        <div class="skilss__content__skill__text flex justify-between items-center">
+                            <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                            <div class="skills__content__skill__icon text-lg font-medium">
+                                <img src="assets/files/html_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__content__skill__progressbar w-full h-4">
+                            <div class="progress h-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skills__content__skill mt-6">
+                        <div class="skilss__content__skill__text flex justify-between items-center">
+                            <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                            <div class="skills__content__skill__icon text-lg font-medium">
+                                <img src="assets/files/html_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__content__skill__progressbar w-full h-4">
+                            <div class="progress h-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skills__content__skill mt-6">
+                        <div class="skills__content__skill__text flex justify-between items-center">
+                            <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                            <div class="skills__content__skill__icon text-lg font-medium">
+                                <img src="assets/files/html_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__content__skill__progressbar w-full h-4">
+                            <div class="progress h-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skills__content__skill mt-6">
+                        <div class="skilss__content__skill__text flex justify-between items-center">
+                            <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                            <div class="skills__content__skill__icon text-lg font-medium">
+                                <img src="assets/files/html_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__content__skill__progressbar w-full h-4">
+                            <div class="progress h-full" style="width: 90%;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="skills__content__skill__progressbar w-full h-4">
-                    <div class="progress h-full" style="width: 90%;"></div>
+
+                <div class="flex flex-col flex-1 sm:pl-4">
+                    <div class="skills__content__skill mt-6">
+                        <div class="skilss__content__skill__text flex justify-between items-center">
+                            <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                            <div class="skills__content__skill__icon text-lg font-medium">
+                                <img src="assets/files/html_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__content__skill__progressbar w-full h-4">
+                            <div class="progress h-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skills__content__skill mt-6">
+                        <div class="skilss__content__skill__text flex justify-between items-center">
+                            <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                            <div class="skills__content__skill__icon text-lg font-medium">
+                                <img src="assets/files/html_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__content__skill__progressbar w-full h-4">
+                            <div class="progress h-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skills__content__skill mt-6">
+                        <div class="skilss__content__skill__text flex justify-between items-center">
+                            <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                            <div class="skills__content__skill__icon text-lg font-medium">
+                                <img src="assets/files/html_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__content__skill__progressbar w-full h-4">
+                            <div class="progress h-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skills__content__skill mt-6">
+                        <div class="skilss__content__skill__text flex justify-between items-center">
+                            <div class="skills__content__skill__name text-lg font-medium">HTML</div>
+                            <div class="skills__content__skill__icon text-lg font-medium">
+                                <img src="assets/files/html_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__content__skill__progressbar w-full h-4">
+                            <div class="progress h-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </div>
 
+    </section>
+
+    <section class="portfolio mt-20 mb-96">
+        <div class="portfolio__header font-xl">
+            Portfolio
+        </div>
+
+        <div class="portfolio__item">
+            <div class="portfolio__item__header">
+                Ecommerce - Leroy Associados
+            </div>
+            <div class="portfolio__item__image">
+                <img src="assets/files/portfolio_leroy.png" alt="">
+            </div>
+        </div>
     </section>
 </body>
 </html>

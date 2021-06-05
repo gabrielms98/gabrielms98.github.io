@@ -16,6 +16,24 @@ body {
 .hero {
   position: relative;
 }
+@media (min-width: 640px) {
+  .hero__content__title {
+    font-size: 2.5rem !important;
+    line-height: 0.9;
+  }
+}
+@media (min-width: 768px) {
+  .hero__content__title {
+    font-size: 3rem;
+    line-height: 0.9;
+  }
+}
+@media (min-width: 768px) {
+  .hero__content__text {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+}
 .hero__content__social {
   width: 60%;
 }
@@ -26,10 +44,27 @@ body {
   right: -1.25rem;
   top: -1.75rem;
 }
+.hero__scroll {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: jump 2s infinite;
+}
 .hero .highlight {
   color: #FF4500;
 }
 
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .about__header .rect {
   margin-left: -1.25rem;
 }
@@ -47,9 +82,20 @@ body {
   top: 0;
   z-index: -1;
 }
+.skills__background img {
+  width: 100vw;
+}
+@media (min-width: 768px) {
+  .skills__background img {
+    height: 35rem;
+  }
+}
 .skills__content__header {
   color: #05445E;
   font-size: 2rem;
+}
+.skills__content__skill {
+  margin: 1rem 0;
 }
 .skills__content__skill__progressbar {
   background: white;
@@ -58,6 +104,21 @@ body {
 .skills__content__skill__progressbar .progress {
   border-radius: 40vw;
   background-color: #FF4500;
+}
+@media (min-width: 768px) {
+  .skills {
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+}
+
+.portfolio__header {
+  font-size: 2rem;
+  color: #05445E;
+}
+.portfolio__item__image img {
+  border-radius: 1rem;
+  border: 0.5rem solid #FF4500;
 }
 
 /*# sourceMappingURL=index.css.map */

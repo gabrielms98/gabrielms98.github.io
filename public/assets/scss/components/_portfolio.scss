@@ -1,0 +1,18 @@
+.portfolio {
+    &__header {
+        font-size: 2rem;
+        color: $ff-primary;
+    }
+
+    &__item {
+
+
+        &__image {
+
+            & img {
+                border-radius: 1rem;
+                border: .5rem solid $clr-secondary;
+            }
+        }
+    }
+}

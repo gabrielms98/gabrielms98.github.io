@@ -1,3 +1,5 @@
+@import 'mixins/breakpoints';
+
 @import 'abstracts/variables';
 @import 'abstracts/reset';
 
@@ -6,3 +8,4 @@
 @import 'components/about';
 @import 'components/skills';
 @import 'components/working';
+@import 'components/portfolio';

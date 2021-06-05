@@ -10,6 +10,15 @@
 
         top: 0;
         z-index: -1;
+        
+        & img {
+            width: 100vw;
+
+            @include md { 
+                height: 35rem;
+            }
+            
+        }
     }
 
     &__content {
@@ -19,6 +28,9 @@
         }
 
         &__skill {
+
+            margin: 1rem 0;
+
             &__name {
 
             }
@@ -33,6 +45,11 @@
                 }
             }
         }
+    }
+
+    @include md { 
+        margin-left: -3rem;
+        margin-right: -3rem;
     }
 
     // background-image: url("../../assets/files/angle_background_mobile.png");
