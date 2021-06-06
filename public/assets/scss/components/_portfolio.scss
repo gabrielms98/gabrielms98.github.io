@@ -4,15 +4,43 @@
         color: $ff-primary;
     }
 
-    &__item {
+    &__carousel {
+        &__item {
 
+            &__image {
 
-        &__image {
+                & img {
+                    border-radius: 1rem;
+                    border: .5rem solid $clr-secondary;
+                }
+            }
 
-            & img {
-                border-radius: 1rem;
-                border: .5rem solid $clr-secondary;
+            &__actions {
+                &__stars {
+                    & img {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+
+                &__button {
+
+                    & button {
+                        background-color: $ff-primary;
+                        color: white;
+                        
+                    }
+                }
             }
         }
-    }
+    } 
+}
+
+.slick-next:before, .slick-prev:before, .slick-dots li.slick-active button:before {
+    color: $clr-secondary;
+}
+
+.slick-dots button:before {
+    margin-top: 1rem;
+    font-size: 10px !important;
 }

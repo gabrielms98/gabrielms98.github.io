@@ -116,9 +116,26 @@ body {
   font-size: 2rem;
   color: #05445E;
 }
-.portfolio__item__image img {
+.portfolio__carousel__item__image img {
   border-radius: 1rem;
   border: 0.5rem solid #FF4500;
+}
+.portfolio__carousel__item__actions__stars img {
+  width: 2rem;
+  height: 2rem;
+}
+.portfolio__carousel__item__actions__button button {
+  background-color: #05445E;
+  color: white;
+}
+
+.slick-next:before, .slick-prev:before, .slick-dots li.slick-active button:before {
+  color: #FF4500;
+}
+
+.slick-dots button:before {
+  margin-top: 1rem;
+  font-size: 10px !important;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -30,6 +30,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css"
         integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Portifolio | Gabriel Martins</title>
 </head> 
@@ -207,19 +213,78 @@
 
     </section>
 
-    <section class="portfolio mt-20 mb-96">
-        <div class="portfolio__header font-xl">
+    <section class="portfolio mt-20 mb-96 md:mt-32">
+        <div class="portfolio__header text-center font-xl mb-4">
             Portfolio
         </div>
+        <div class="portfolio__carousel">
+           <div class="portfolio__carousel__item">
+                <div class="md:flex md:relative mx-2">
+                    <div>
+                        <div class=" text-xl my-4 md:text-2xl font-medium">
+                            Ecommerce - Leroy Associados
+                        </div>
+                
+                        <div class="">
+                            Ecommerce for selling plans. CRUD, listing and selling of the product.
+                        </div>
+                    </div>
+                    <div class="md:flex md:flex-row-reverse">
+                        <div class="portfolio__carousel__item__image">
+                            <img src="assets/files/portfolio_leroy.png" alt="">
+                        </div>
+                        <div class="portfolio__carousel__item__actions flex justify-between items-center mt-4 md:absolute md:left-0 md:bottom-0 md:block">
+                            <div class="portfolio__carousel__item__actions__stars flex mb-4">
+                                <img src="assets/files/star.png" alt="">
+                                <img src="assets/files/star.png" alt="">
+                                <img src="assets/files/star.png" alt="">
+                                <img src="assets/files/star.png" alt="">
+                            </div>
+                            <div class="portfolio__carousel__item__actions__button">
+                                <button class="py-2 px-6 rounded-2xl md:text-xl">See demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
 
-        <div class="portfolio__item">
-            <div class="portfolio__item__header">
-                Ecommerce - Leroy Associados
-            </div>
-            <div class="portfolio__item__image">
-                <img src="assets/files/portfolio_leroy.png" alt="">
+        <div class="portfolio__carousel__item">
+            <div class="md:flex md:relative mx-2">
+                <div>
+                    <div class=" text-xl my-4 md:text-2xl font-medium">
+                        Ecommerce - Leroy Associados
+                    </div>
+        
+                    <div class="">
+                        Ecommerce for selling plans. CRUD, listing and selling of the product.
+                    </div>
+                </div>
+                <div class="md:flex md:flex-row-reverse">
+                    <div class="portfolio__carousel__item__image">
+                        <img src="assets/files/portfolio_leroy.png" alt="">
+                    </div>
+                    <div
+                        class="portfolio__carousel__item__actions flex justify-between items-center mt-4 md:absolute md:left-0 md:bottom-0 md:block">
+                        <div class="portfolio__carousel__item__actions__stars flex mb-4">
+                            <img src="assets/files/star.png" alt="">
+                            <img src="assets/files/star.png" alt="">
+                            <img src="assets/files/star.png" alt="">
+                            <img src="assets/files/star.png" alt="">
+                        </div>
+                        <div class="portfolio__carousel__item__actions__button">
+                            <button class="py-2 px-6 rounded-2xl md:text-xl">See demo</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+           
+        </div>
+
     </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
