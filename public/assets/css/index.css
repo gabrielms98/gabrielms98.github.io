@@ -138,4 +138,112 @@ body {
   font-size: 10px !important;
 }
 
+.slick-next, .slick-prev {
+  display: none !important;
+}
+@media (min-width: 640px) {
+  .slick-next, .slick-prev {
+    display: inline-block !important;
+  }
+}
+
+.experience {
+  position: relative;
+}
+.experience__header {
+  font-size: 2rem;
+  color: #05445E;
+}
+.experience__background-mobile {
+  position: absolute;
+  right: -1.25rem;
+  top: -2rem;
+}
+.experience__background-left {
+  position: absolute;
+  left: -3rem;
+  top: -2rem;
+}
+@media (min-width: 768px) {
+  .experience__background-left {
+    width: 10rem;
+  }
+}
+@media (min-width: 1024px) {
+  .experience__background-left {
+    width: max-content;
+  }
+}
+.experience__background-right {
+  position: absolute;
+  right: -3rem;
+  bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .experience__background-right {
+    width: 10rem;
+  }
+}
+@media (min-width: 1024px) {
+  .experience__background-right {
+    width: max-content;
+  }
+}
+.experience__container {
+  position: relative;
+}
+.experience__container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #05445E;
+}
+@media (min-width: 768px) {
+  .experience__container::before {
+    left: calc(50% - 1px);
+  }
+}
+.experience__container__item {
+  position: relative;
+}
+.experience__container__item__name span {
+  font-weight: 600;
+}
+.experience__container__item__date {
+  color: #FF4500;
+}
+.experience__container__item::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid #05445E;
+  background-color: white;
+  position: absolute;
+  left: calc(-.5rem + 1px);
+  top: calc(50% - .5rem);
+}
+@media (min-width: 768px) {
+  .experience__container__item::before {
+    left: calc(50% - .5rem);
+  }
+}
+@media (min-width: 768px) {
+  .experience__container__item:nth-child(even) {
+    padding-left: calc(50% + 1rem);
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .experience__container__item:nth-child(odd) {
+    padding-right: calc(50% + 1rem);
+    text-align: right;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

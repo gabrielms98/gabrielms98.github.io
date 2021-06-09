@@ -1,0 +1,113 @@
+.experience {
+    
+    position: relative;
+
+    &__header {
+        font-size: 2rem;
+        color: #05445E;
+    }
+    
+    &__background-mobile {
+        position: absolute;
+        right: -1.25rem;
+        top: -2rem;
+    }
+
+    &__background-left {
+        position: absolute;
+        left: -3rem;
+        top: -2rem;
+
+        @include md {
+            width: 10rem;
+        }
+
+        
+        @include lg {
+            width: max-content;
+        }
+    }
+
+    &__background-right {
+        position: absolute;
+        right: -3rem;
+        bottom: 2rem;
+
+        @include md {
+            width: 10rem;
+        }
+
+        @include lg {
+            width: max-content;
+        }
+    }
+
+    &__container {
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            background-color: $ff-primary;
+
+            @include md {
+                left: calc(50% - 1px);
+            }
+        }
+
+        &__item {
+            position: relative;
+
+            &__name {
+                & span {
+                    font-weight: 600;
+                }
+            }
+
+            &__date {
+                color: $clr-secondary;
+            }
+
+            
+            &::before {
+                content: "";
+                display: block;
+                width: 1rem;
+                height: 1rem;
+
+                border-radius: 50%;
+                border: 2px solid $ff-primary;
+                background-color: white;
+
+                position: absolute;
+                left: calc(-.5rem + 1px);
+                top: calc(50% - .5rem);
+
+                
+                @include md {
+                    left: calc(50% - .5rem);
+                }
+            }
+
+            &:nth-child(even) {
+                @include md {
+                    padding-left: calc(50% + 1rem);
+                    text-align: left;
+                }       
+            }
+
+            &:nth-child(odd) {
+                @include md {
+                    padding-right: calc(50% + 1rem);
+                    text-align: right;
+                }       
+            }
+        }
+
+    }
+}

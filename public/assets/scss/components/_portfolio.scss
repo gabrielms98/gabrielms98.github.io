@@ -44,3 +44,11 @@
     margin-top: 1rem;
     font-size: 10px !important;
 }
+
+.slick-next, .slick-prev  {
+    display: none !important;
+
+    @include sm {
+        display: inline-block !important;
+    }
+}
