@@ -1,56 +1,62 @@
 .hero {
 
-    width: 100%;
-    height: calc(100vh - 4rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0 5rem;
     position: relative;
 
     &__content {
         
-        &__title h2{
-            font-size: 4rem;
-            font-weight: 500;
+        &__title {
 
-            line-height: 1;
-            & .highlight {
-                color: $clr-secondary;
-                font-weight: 600;
+            @include sm {
+                font-size: 2.5rem !important;
+                line-height: .9;
+            }
+
+            @include md {
+                font-size: 3rem;
+                line-height: .9;
             }
         }
 
-        &__subtitle {
-            margin-top: 2rem;
+        &__text {
 
-            font-size: 1.5rem;
-            font-weight: normal;
+            @include md {
+                font-size: 1.2rem;
+                line-height: 1.1;
+            }
+        }
+
+        &__social {
+            width: 60%;
+
+            &>a+a {
+                margin-left: .5rem;
+            }
         }
     }
 
-    &__img {
+    &__image {
+
+        right: -1.25rem;
+        top: -1.75rem;
 
         & img {
-            width: 730px;
-            height: 730px;
+            
         }
-    }
+    } 
 
+    
     &__scroll {
-        position: absolute;
-
-        bottom: 1rem;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        animation: jump 1s ease-in-out infinite;
-
-        & img {
-            width: 3.5rem;
-            height: 3.5rem;
-        }
+        animation: jump 2s infinite;
     }
+    
+    & .highlight {
+        color: $clr-secondary;
+    }
+
+
 }
 
 @keyframes jump {
@@ -59,7 +65,7 @@
     }
 
     50% {
-        transform: translateY(5px);
+        transform: translateY(-.5rem);
     }
 
     100% {

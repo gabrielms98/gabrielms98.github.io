@@ -1,0 +1,60 @@
+.skills {
+
+    position: relative;
+
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+
+    &__background {
+        position: absolute;
+
+        top: 0;
+        z-index: -1;
+        
+        & img {
+            width: 100vw;
+
+            @include md { 
+                height: 35rem;
+            }
+            
+        }
+    }
+
+    &__content {
+        &__header {
+            color: $ff-primary;
+            font-size: 2rem;
+        }
+
+        &__skill {
+
+            margin: 1rem 0;
+
+            &__name {
+
+            }
+
+            &__progressbar {
+                background: white;
+                border-radius: 40vw;
+
+                & .progress {
+                    border-radius: 40vw;
+                    background-color: $clr-secondary;
+                }
+            }
+        }
+    }
+
+    @include md { 
+        margin-left: -3rem;
+        margin-right: -3rem;
+    }
+
+    // background-image: url("../../assets/files/angle_background_mobile.png");
+    // background-repeat: no-repeat;
+
+    // height: 100vh;
+    // margin: -1.25rem;
+}
